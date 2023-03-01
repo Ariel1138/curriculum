@@ -40,5 +40,18 @@ body {
 
 #objetivos {
   margin-top: 20px;
+  width: 18rem;
 }
 
+html {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  }
+
+  #descripcion-objetivo {
+    text-align: justify;
+  }
+
+  #formato-tabla {
+    font-weight: bold;
+  }
