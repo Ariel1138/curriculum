@@ -1,17 +1,19 @@
 var objetivoParrafo = document.getElementById("objetivos")
 var iconolinkedin = document.getElementById("iconolinkedin")
+var iconoistagram = document.getElementById("iconoinstagram")
 var textolink = document.getElementById("link-linkedin")
 var textolink2 = document.getElementById("link-instagram")
+
 
 
 
 objetivoParrafo.addEventListener("mouseover", beautyObjectives)
 objetivoParrafo.addEventListener("mouseleave", unbeautyObjectives)
 objetivoParrafo.addEventListener("click", showMessage)
-textolink.addEventListener("mouseleave", hidden)
-textolink.addEventListener("mouseover",showicon)
-textolink2.addEventListener("mouseleave", hidden)
-textolink2.addEventListener("mouseover",showicon)
+textolink.addEventListener("mouseleave", hiddenIconLinkedin)
+textolink.addEventListener("mouseover",showiconLinkedin)
+textolink2.addEventListener("mouseleave", hiddenIconInstagram)
+textolink2.addEventListener("mouseover",showiconInstagram)
 
 
 
@@ -37,17 +39,17 @@ function showMessage() {
 
 }
 
-function showicon() {
+function showiconLinkedin() {
     iconolinkedin.style.visibility = "visible"
 }
 
-function hidden() {
+function hiddenIconLinkedin() {
     iconolinkedin.style.visibility = "hidden"
 }
-function showicon() {
-    iconoistagram.style.visibility = "visible"
+function showiconInstagram() {
+    iconoinstagram.style.visibility = "visible"
 }
 
-function hidden() {
-    iconoistagram.style.visibility = "hidden"
+function hiddenIconInstagram() {
+    iconoinstagram.style.visibility = "hidden"
 }
